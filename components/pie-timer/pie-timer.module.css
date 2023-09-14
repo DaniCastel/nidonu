@@ -1,0 +1,20 @@
+@property --percentage {
+  initial-value: 0%;
+  inherits: false;
+  syntax: "<percentage>";
+}
+
+.chart {
+  border-radius: 10rem;
+  width: 100%;
+  aspect-ratio: 1;
+  animation: timer infinite linear;
+  box-shadow: 0px 0px 45px 1px rgba(204, 204, 204, 1);
+  max-width: 300px;
+}
+
+@keyframes timer {
+  to {
+    --percentage: 100%;
+  }
+}

@@ -1,5 +1,6 @@
 // tailwind.config.js
 const { nextui } = require("@nextui-org/react");
+const colors = require("tailwindcss/colors");
 
 // tailwind.config.js
 module.exports = {
@@ -14,5 +15,24 @@ module.exports = {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: "#0891b2",
+              foreground: "#fff",
+            },
+            black: colors.black,
+            white: colors.white,
+            gray: colors.gray,
+            emerald: colors.emerald,
+            indigo: colors.indigo,
+            yellow: colors.yellow,
+          },
+        },
+      },
+    }),
+  ],
 };

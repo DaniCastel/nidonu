@@ -1,0 +1,8 @@
+.container {
+  background-size: 900px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 1rem;
+}
